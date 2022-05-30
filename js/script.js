@@ -25,11 +25,19 @@ const keys = {
     const number = document.getElementById("number").checked;
     const symbol = document.getElementById("symbol").checked;
     if (upper + lower + number + symbol === 0) {
-      alert("Please check atleast one box!");
+      alert("Bitte wenigstens eine Box auswählen.");
       return;
     }
     const passwordBox = document.getElementById("passwordBox");
     const length = document.getElementById("length");
+    if (length.value < 8 ) {
+        alert(`Die Laenge von ${length.value} ist zu kurz, bitte mindestens 8 Zeichen auswählen`);
+        return;
+    }
+    if (length.value > 63 ) {
+        alert(`Die Laenge von ${length.value} ist zu lang, bitte maximal 63 Zeichen auswählen`);
+        return;
+    }
     let password = "";
     while (length.value > password.length) {
       let keyToAdd = getKey[Math.floor(Math.random() * getKey.length)];
@@ -49,5 +57,5 @@ const keys = {
     textarea.select();
     document.execCommand("copy");
     textarea.remove();
-    alert("Password copied to clipboard");
+    alert("Passwort in die Zwischenablage kopiert");
   }

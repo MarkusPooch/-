@@ -6,15 +6,17 @@
 
 .container {
   display: flex;
+  margin: 10px 0;
   justify-content: center;
   align-items: center;
-  background-color: #9b415c;
-  height: 100vh;
+  background-color: #a0d3f4;
+  min-height: 400px;
+  max-height: 600px;
 }
 
 .password-generator {
   padding: 40px;
-  background-color: #6f2f42;
+  background-color: #3098ee;
   color: white;
   font-size: 20px;
   font-family: sans-serif;
@@ -27,8 +29,9 @@
 }
 
 .password {
-  min-width: 280px;
-  background-color: #431c27;
+  min-width: 400px;
+  max-width: 730px;
+  background-color: #0d7dba;
   color: rgb(199, 199, 199);
 }
 
@@ -39,4 +42,17 @@
 .password i {
   background-color: rgba(0, 0, 0, 0.575);
   padding: 6px 10px;
+}
+
+.password-generator button {
+  width: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 0.699);
+  background-color: #2c131a;
+  padding: 10px;
+}
+
+.far {
+  float:right;
+  background-image: src (images/copy.png);
 }
