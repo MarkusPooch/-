@@ -1,7 +1,7 @@
 const keys = {
-    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    lowerCase: "abcdefghijklmnopqrstuvwxyz",
-    number: "0123456789",
+    upperCase: "ABCDEFGHKLMNPQRSTUVWXYZ",
+    lowerCase: "abcdefghkmnpqrstuvwxyz",
+    number: "123456789",
     symbol: "!@#$%^&*()_+~\`|}{[]:;?><,./-="
   }
   const getKey = [
