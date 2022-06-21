@@ -54,5 +54,5 @@
 
 .far {
   float:right;
-  background-image: src (images/copy.png);
+  background-image: src (../images/copy.png);
 }
